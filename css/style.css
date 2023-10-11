@@ -927,11 +927,86 @@ input,textarea {
 
 @media only screen and (min-width:428px) and (max-width: 767px) {
   .container {
-    width: 775px;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
-@media only screen (min-width:428px) and (max-width: 767px) {
-  
+@media only screen and (min-width:428px) and (max-width: 767px),
+  only screen and (max-width:427px) {
+  .address-list, .nav-list {
+    display: none;
+  }
+
+  .header {
+    padding-left: 16px
+  }
+
+  .section-hero {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero-text {
+    display: block;
+    max-width: 320px;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    margin: 0 auto 72px;
+  }
+
+  .features-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .features-icon {
+    display: none;
+  }
+
+  .features-items-title {
+    align-self: stretch;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700px;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+  }
+
+  .section-services {
+       display: none;
+  }
+
+  .team-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .team-list-items {
+    margin:0 auto
+  }
+
+  .customer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:72px 16px;
+  }
+
+  .section-footer {
+    display: flex;
+    gap: 72px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
 }
