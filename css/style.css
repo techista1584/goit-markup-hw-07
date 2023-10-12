@@ -1003,10 +1003,46 @@ input,textarea {
   }
 
   .section-footer {
-    display: flex;
-    gap: 72px;
-    justify-content: center;
     flex-wrap: wrap;
+    gap: 72px;
+  }
+
+  .paragraph-container {
+    margin: 0 auto;
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-container {
+    margin: 0 auto;
+  }
+  .socmed-container {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 72px;
+  }
+
+  .footer-socmed-header{
+    text-align: center;
+  }
+
+  .subscription {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:16px;
+  }
+
+  .subscribe-button{
+    margin-top: 16px;
+  }
+
+  .footer-input{
+    margin: 0 auto;
+  }
+}
     
 
-}
