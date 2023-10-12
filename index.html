@@ -44,6 +44,12 @@
                     <li><a class="address-list-item link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <!-- Mobile Menu button -->
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu-icon">
+                    <use href="./images/sprite/icons.svg#burger"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <!-- Main Section -->
@@ -448,6 +454,67 @@
              
         </div>
     </div>
+    <!-- Mobile -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle js-close-menu mobile-close-btn">
+            <svg class="mobile-close-icon" width="24px" height="24px">
+                <use href="./images/sprite/modal-icons.svg#x-icon"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu-list list">
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="/goit-markup-hw-07">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="/goit-markup-hw-07">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+                <a class="mobile-menu-link link" href="/goit-markup-hw-07">Contacts</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-contacts-list list">
+            <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-socmed-list list">
+            <li class="mobile-socmed-link-items">
+                <a class="mobile-socmed-link link" href="/goit-markup-hw-07/">
+                    <svg class="mobile-socmed-icon" width="24" height="24">
+                        <use href="./images/sprite/icons.svg#instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-socmed-link-items">
+                <a class="mobile-socmed-link link" href="/goit-markup-hw-07/">
+                    <svg class="mobile-socmed-icon" width="24" height="24">
+                        <use href="./images/sprite/icons.svg#twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-socmed-link-items">
+                <a class="mobile-socmed-link link" href="/goit-markup-hw-07/">
+                    <svg class="mobile-socmed-icon" width="24" height="24">
+                        <use href="./images/sprite/icons.svg#facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-socmed-link-items">
+                <a class="mobile-socmed-link link" href="/goit-markup-hw-07/">
+                    <svg class="mobile-socmed-icon" width="24" height="24">
+                        <use href="./images/sprite/icons.svg#linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script> 
 </body>
 </html>
