@@ -465,7 +465,7 @@ input,textarea {
   align-items: center;
 }
 
-.footer-socmed-links {
+.footer-socmed-list {
   display: flex;
   align-items: center;
   column-gap: 16px;
@@ -1052,13 +1052,16 @@ input,textarea {
   gap: 56px;
 }
 
+
 .mobile-socmed-link {
   display: flex;
+  margin: auto;
+  text-align: center;
   justify-content: space-evenly;
   align-items: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 40px;
   background-color: var(--iris);
   transition: background-color 250ms var(--cubic-bezier);
 }
