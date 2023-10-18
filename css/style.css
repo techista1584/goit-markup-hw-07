@@ -1052,7 +1052,6 @@ input,textarea {
   gap: 56px;
 }
 
-
 .mobile-socmed-link {
   display: flex;
   margin: auto;
@@ -1077,14 +1076,14 @@ input,textarea {
 
 /* Media Queries */
 
-@media only screen and (min-width:428px) and (max-width: 767px) {
+@media screen and (min-width:320px) and (max-width: 767px) {
   .container {
     width: 100%;
     margin: 0 auto;
   }
 }
 
-@media only screen and (min-width:428px) and (max-width: 767px),
+@media screen and (min-width:320px) and (max-width: 767px),
   only screen and (max-width:427px) {
   .address-list, .nav-list {
     display: none;
@@ -1205,5 +1204,21 @@ input,textarea {
     margin: 0 auto;
   }
 }
-    
+
+/* tablet */
+/* @media screen and (min-width:768px) {
+  .container {
+    max-width: 768px;
+  }
+  }
+
+@media screen and (min-width:768px) {
+  .nav-list{
+    display: flex;
+    gap: 24px;
+    margin-left: 120px;
+  }
+} */
+
+  
 
