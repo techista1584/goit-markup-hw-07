@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="description" content="Provides digital and marketing growth solutions.">
     <title>Mateo, Ruby L. HW-07</title>
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" >
+    <link rel="stylesheet" href="./css/common.css" >
+    <link rel="stylesheet" href="./css/mobile.css" >
+    <link rel="stylesheet" href="./css/tablet.css" >
+    <link rel="stylesheet" href="./css/desktop.css" >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +68,7 @@
                 <ul class="features-list list">
                     <li class="features-list-item">
                         <svg class="features-icon">
-                            <use href="./images/icons/sprite/features.svg#antenna"></use>
+                            <use href="./images/icons/sprite/icons.svg#antenna"></use>
                         </svg>
                         <h3 class="features-items-title">Strategy</h3>
                         <p class="features-paragraph">Our goal is to identify the business<br>
@@ -75,7 +78,7 @@
                     </li>
                     <li class="features-list-item">
                         <svg class="features-icon">
-                            <use href="./images/icons/sprite/features.svg#clock"></use>
+                            <use href="./images/icons/sprite/icons.svg#clock"></use>
                         </svg>
                         <h3 class="features-items-title">Punctuality</h3>
                         <p class="features-paragraph">Bring the key message to the<br>
@@ -85,7 +88,7 @@
                     </li>
                     <li class="features-list-item">
                         <svg class="features-icon">
-                            <use href="./images/icons/sprite/features.svg#diagram"></use>
+                            <use href="./images/icons/sprite/icons.svg#diagram"></use>
                         </svg>
                         <h3 class="features-items-title">Diligence</h3>
                         <p class="features-paragraph">Research and confirm brands that<br>
@@ -95,7 +98,7 @@
                     </li>
                     <li class="features-list-item">
                         <svg class="features-icon">
-                            <use href="./images/icons/sprite/features.svg#astronaut"></use>
+                            <use href="./images/icons/sprite/icons.svg#astronaut"></use>
                         </svg>
                         <h3 class="features-items-title">Technologies</h3>
                         <p class="features-paragraph">Design practice focused on digital<br>
@@ -380,7 +383,7 @@
                     <h4 class="subscription-header">Subscribe</h4>
                     <form>
                         <label class="footer-form" for="footer-email">
-                            <input class="footer-input" type="email" name="footer-email" placeholder="E-mail" required>
+                            <input class="footer-input" id="footer-email" type="email" name="footer-email" placeholder="E-mail" required>
                         </label>
                         <button class="subscribe-button" type="submit">
                             Subscribe
@@ -407,7 +410,7 @@
                 <h3 class="modal-header">Leave your contacts and we will call you back</h3>
                 <label class="modal-contacts label" for="modal-name">
                     <span>Name</span>
-                    <input class="form-input" type="text" name="modal-name" required>
+                    <input class="form-input" id="modal-name" type="text" name="modal-name" required>
                     <svg class="contacts-icon" width="18">
                         <use href="./images/sprite/modal-icons.svg#person-icon"></use>
                     </svg>
@@ -415,7 +418,7 @@
 
                 <label class="modal-contacts label" for="modal-phone">
                     <span>Phone</span>
-                    <input class="form-input" type="tel" name="modal-phone" required>
+                    <input class="form-input" id="modal-phone" type="tel" name="modal-phone" required>
                     <svg class="contacts-icon" width="18">
                         <use href="./images/sprite/contacts-icons.svg#phone"></use>
                     </svg>
@@ -423,7 +426,7 @@
 
                 <label class="modal-contacts label" for="modal-email">
                     <span>Email</span>
-                    <input class="form-input" type="email" name="modal-email" required>
+                    <input class="form-input" id="modal-email" type="email" name="modal-email" required>
                     <svg class="contacts-icon" width="18">
                         <use href="./images/sprite/contacts-icons.svg#email"></use>
                     </svg>
@@ -431,11 +434,11 @@
 
                 <label class="modal-textarea label" for="modal-comment" >
                     <span>Comment</span>
-                    <textarea name="modal-comment" rows="8" placeholder="Text input"></textarea>
+                    <textarea id="modal-comment" name="modal-comment" rows="8" placeholder="Text input"></textarea>
                 </label>
 
                 <label for="terms" class="checkbox-label">
-                    <input type="checkbox" width="16" id="terms" name="terms" class="checkbox-input visually-hidden" required/>
+                    <input type="checkbox" id="terms" name="terms" class="checkbox-input visually-hidden" required>
                     <svg class="checkbox-icon">
                         <use href="images/icons/check-icon.svg#check-icon"></use>
                     </svg>
