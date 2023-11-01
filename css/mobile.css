@@ -4,6 +4,7 @@
   min-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
+  margin: 0 auto;
 }
 
 .address-list,
@@ -28,6 +29,7 @@
 }
 
 .section-hero {
+  width:100%;
   text-align: center;
   padding-top: 112px;
   padding-bottom: 240px;
@@ -35,19 +37,20 @@
       rgba(46, 47, 66, 0.7)),
     url(../images/hero/hero_mobile.jpg);
   background-repeat: no-repeat;
-  background-position: cover;
-  background-size: 428px;
+  background-size: cover;
   background-color: var(--navyblue);
 }
 
 .hero-text {
-  display: block;
-  min-width: 320px;
   font-size: 36px;
+  font-weight: 700;
   line-height: 40px;
+  /* 111.111% */
   letter-spacing: 0.72px;
-  margin: 0 auto 72px;
+  text-transform: capitalize;
+  text-align: center;
   color: var(--white);
+  margin-bottom: 72px;
 }
 
 .features-list {
@@ -85,6 +88,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   flex-direction: column;
   gap: 72px;
 }
@@ -95,16 +99,44 @@
 
 .customer-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 72px 16px;
+  gap: 24px;
+}
+
+.customer-list-items {
+  padding: 16px 40px;
+  border: 1px solid var(--light_slate);
+  border-radius: 4px;
+  color: var(--light_slate);
+  transition: border-color 250ms var(--cubic-bezier);
+}
+
+.customer-list-items:hover {
+  border-color: var(--ocean);
+}
+
+.customer-list-items:hover .icon-clients-link {
+  color: var(--ocean);
+}
+
+.icon-clients-link {
+  color: var(--light_slate);
+  transition: color 250ms var(--cubic-bezier);
+}
+
+.customer-icon {
+  width: 104px;
+  height: 56px;
+  flex-shrink: 0;
+  fill: currentColor;
+  transition: fill 250ms var(--cubic-bezier);
 }
 
 .section-footer {
-  flex-wrap: wrap;
-  gap: 72px;
+  display: flex;
+  flex-direction: column;
 }
 
 .paragraph-container {
@@ -126,6 +158,12 @@
   padding: 72px;
 }
 
+.footer-socmed-list {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
 .footer-socmed-header {
   text-align: center;
 }
@@ -144,8 +182,6 @@
 .footer-input {
   margin: 0 auto;
 }
-
-
 
   /* Mobile View */
   .menu-toggle {
