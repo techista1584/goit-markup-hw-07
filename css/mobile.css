@@ -349,8 +349,8 @@
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.72px;
-    text-align: start;
     align-content: flex-start;
+    margin: 0;
   }
 
   .mobile-menu-link{
@@ -366,7 +366,10 @@
   }
 
   .mobile-contacts-list {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
     gap: 40px;
     margin-bottom: 48px;
     margin-top: auto;
