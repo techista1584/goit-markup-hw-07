@@ -5,26 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="description" content="Provides digital and marketing growth solutions.">
-    <title>Mateo, Ruby L. HW-07</title>
+
+    <link rel="shortcut icon" href="./images/icons/favicon.ico">
+    <title>WebStudio HW- Ruby Mateo</title>
+
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/mobile.css" >
     <link rel="stylesheet" href="./css/tablet.css" >
     <link rel="stylesheet" href="./css/desktop.css" >
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+
 </head>
 <body>
     <!-- Header Section -->
-    <header class="header">
-        <div class="container main-header-container">
+    <header class="header topline">
+        <div class="main-header-container">
             <nav class="nav">
                 <!-- Logo -->
-                <a href="/goit-markup-hw-07/" class="header-logo link">
+                <a href="/goit-markup-hw-07/" class="logo logo-header">
                     <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
                 </a>
                 <ul class="nav-list list">
@@ -39,29 +43,35 @@
                         <a class="nav-list-item-link link" href="/goit-markup-hw-07/">Contacts</a>
                     </li>
                 </ul>
+
+                <button class="mobile-menu-open js-open-menu" aria-expanded="false" aria controls="mobile-menu">
+                    <svg class="burger-button">
+                        <use href="./images/icons/icons.svg#burger"></use>
+                    </svg>
+                </button>
             </nav>
             <!-- contact details -->
             <address class="address">
                 <ul class="address-list list">
-                    <li><a class="address-list-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="address-list-item link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+                    <li>
+                        <a class="address-list-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="address-list-item link" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+                    </li>
                 </ul>
             </address>
-        </div>
-        <button class="mobile-menu-open">
-            <svg class="burger-button">
-                <use href="./images/icons/burger.svg"></use>
-            </svg>
-        </button>
+        </div>   
     </header>
 
     <!-- Main Section -->
     <main class="main">
         <!-- Scrolls -->
         <section class="section-hero">
-            <div class="container section-hero-main">
-                <h1 class="hero-text">Effective Solutions<br>
-                    for Your Business</h1>
+            <div class="section-hero-main">
+                <h1 class="hero-text">
+                    Effective Solutions<br>for Your Business
+                </h1>
                 <button type="button" data-modal-open class="button main-button">
                     Order Service
                 </button>
@@ -69,47 +79,43 @@
         </section>
         <!-- Section1 -->
         <section class="section features">
-            <div class="container section-container">
+            <div class="container section-features">
                 <h2 hidden>Features</h2>
                 <ul class="features-list list">
                     <li class="features-list-item">
                         <svg class="features-icon">
                             <use href="./images/icons/icons.svg#antenna"></use>
                         </svg>
-                        <h3 class="features-items-title">Strategy</h3>
-                        <p class="features-paragraph">Our goal is to identify the business<br>
-                            problem to walk away with the<br>
-                            perfect and creative solution.
+                        <h3 class="features-items title">Strategy</h3>
+                        <p class="features-paragraph">Our goal is to identify the business problem to walk
+                             away with the perfect and creative solution.
                         </p>
                     </li>
                     <li class="features-list-item">
                         <svg class="features-icon">
                             <use href="./images/icons/icons.svg#clock"></use>
                         </svg>
-                        <h3 class="features-items-title">Punctuality</h3>
-                        <p class="features-paragraph">Bring the key message to the<br>
-                            brand's audience for the best price<br>
-                            within the shortest possible time.
+                        <h3 class="features-items title">Punctuality</h3>
+                        <p class="features-paragraph">Bring the key message to the brand's audience for the
+                             best price within the shortest possible time.
                         </p>
                     </li>
                     <li class="features-list-item">
                         <svg class="features-icon">
                             <use href="./images/icons/icons.svg#diagram"></use>
                         </svg>
-                        <h3 class="features-items-title">Diligence</h3>
-                        <p class="features-paragraph">Research and confirm brands that<br>
-                            present the strongest digital growth<br>
-                            opportunities and minimize risk.
+                        <h3 class="features-items title">Diligence</h3>
+                        <p class="features-paragraph">Research and confirm brands that present the strongest
+                             digital growth opportunities and minimize risk.
                         </p>
                     </li>
                     <li class="features-list-item">
                         <svg class="features-icon">
                             <use href="./images/icons/icons.svg#astronaut"></use>
                         </svg>
-                        <h3 class="features-items-title">Technologies</h3>
-                        <p class="features-paragraph">Design practice focused on digital<br>
-                            experiences. We bring forth a deep<br>
-                            passion for problem-solving.
+                        <h3 class="features-items title">Technologies</h3>
+                        <p class="features-paragraph">Design practice focused on digital experiences. We bring
+                             forth a deep passion for problem-solving.
                         </p>
                     </li>
                 </ul>
@@ -118,33 +124,44 @@
         <!-- Section2 -->
         <section class="section-services">
             <div class="container section-no-top-padding">
-                <h2 class="services-header section-title">What are we doing</h2>
+                <h2 class="services-header section title">What are we doing</h2>
                 <ul class="services-list list">
-                    <li class="services-list-items"><img src="./images/services/pcdashboard.png"
-                            alt="picture of a computer showing dashboard" width="360"></li>
-                    <li class="services-list-items"><img src="./images/services/mobile_screens.jpg"
-                            alt="picture of mobile screens" width="360"></li>
-                    <li class="services-list-items"><img src="./images/services/holding_phone.jpg"
-                            alt="picture of a hand holding a cellphone" width="360"></li>
+                    <li class="services-list-items">
+                        <img src="./images/services/pcdashboard.png"
+                            alt="picture of a computer showing dashboard" width="360">
+                    </li>
+                    <li class="services-list-items">
+                        <img src="./images/services/mobile_screens.jpg"
+                            alt="picture of mobile screens" width="360">
+                    </li>
+                    <li class="services-list-items">
+                        <img src="./images/services/holding_phone.jpg"
+                            alt="picture of a hand holding a cellphone" width="360">
+                    </li>
                 </ul>
             </div>
         </section>
 
         <!-- Section3 -->
         <section class="section team">
-            <div class="container section-container">
-                <h2 class="team-header section-title">Our Team</h2>
+            <div class="container section-team">
+                <h2 class="team-header section title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-list-items">
-                        <img src="./images/team/mguerrero.jpg" alt="picture of Mark Guerrero" width="264"
+                        <img src="./images/team/mguerrero.jpg" 
+                            alt="picture of Mark Guerrero" 
+                            width="264" 
                             class="team-item-image">
                         <div class="team-details">
                             <h3 class="team-name">Mark Guerrero</h3>
                             <p class="team-role">Product Designer</p>
                             <ul class="socmed-links list">
                                 <li class="socmed-link-items">
-                                    <a class="socmed-link link" href="/goit-markup-hw-07/">
-                                        <svg class="socmed-icon" width="16" height="16">
+                                    <a class="socmed-link link" 
+                                        href="/goit-markup-hw-07/">
+                                        <svg class="socmed-icon" 
+                                            width="16"
+                                            height="16">
                                             <use href="./images/icons/icons.svg#instagram"></use>
                                         </svg>
                                     </a>
@@ -291,7 +308,7 @@
         </section>
         <section class="section customers">
             <div class="container section-customers">
-                <h2 class="customer-icons section-title">customers</h2>
+                <h2 class="customer-icons section title">customers</h2>
                 <ul class="customer-list list">
                     <li class="customer-list-items">
                         <a class="icon-clients-link" href="">
@@ -342,11 +359,11 @@
     <!-- Footer Section -->
     <footer class="footer">
         <section>
-            <div class="container paragraph-container">
+            <div class="container footer-container">
                 <!-- Logo -->
                 <div class="logo-container">
-                    <a class="footer-logo link" href="/goit-markup-hw-07/">
-                        <span class="footer-logo-web">web</span><span class="footer-logo-studio">studio</span></a>
+                    <a class="logo logo-footer" href="/goit-markup-hw-07/">
+                        <span class="logo-web">web</span><span class="footer-logo-studio">studio</span></a>
                     <p class="footer-paragraph">Increase the flow of customers and<br>
                         sales for your business with digital<br>
                         marketing & growth solutions.
@@ -357,28 +374,28 @@
                     <ul class="footer-socmed-list list">
                         <li class="footer-socmed-link-items">
                             <a class="footer-socmed-link link" href="/goit-markup-hw-07/">
-                                <svg class="socmed-icon" width="16" height="16">
+                                <svg class="footer-socmed-icon" width="24" height="24">
                                     <use href="./images/icons/icons.svg#instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-socmed-link-items">
                             <a class="footer-socmed-link link" href="/goit-markup-hw-07/">
-                                <svg class="socmed-icon" width="16" height="16">
+                                <svg class="footer-socmed-icon" width="24" height="24">
                                     <use href="./images/icons/icons.svg#twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-socmed-link-items">
                             <a class="footer-socmed-link link" href="/goit-markup-hw-07/">
-                                <svg class="socmed-icon" width="16" height="16">
+                                <svg class="footer-socmed-icon" width="24" height="24">
                                     <use href="./images/icons/icons.svg#facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-socmed-link-items">
                             <a class="footer-socmed-link link" href="/goit-markup-hw-07/">
-                                <svg class="socmed-icon" width="16" height="16">
+                                <svg class="footer-socmed-icon" width="24" height="24">
                                     <use href="./images/icons/icons.svg#linkedin"></use>
                                 </svg>
                             </a>
@@ -408,7 +425,7 @@
         <div class="modal-content">
             <button class="modal-close" data-modal-close>
                 <svg class="modal-close-icon" width="24px" height="24px">
-                    <use href="./images/modal-icons.svg#x-icon"></use>
+                    <use href="./images/icons/icons.svg#icon-close"></use>
                 </svg>
             </button>
             <!-- Form -->
