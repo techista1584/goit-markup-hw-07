@@ -38,6 +38,10 @@
   cursor: pointer;
 }
 
+.mobile-socmed-link-items{
+  margin: 0;
+}
+
 /* HERO */
  .section-hero {
    display: flex;
@@ -399,8 +403,10 @@
 
   .mobile-socmed-list {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: flex-start;
+    align-items: center;
     gap: 56px;
   }
 
@@ -408,7 +414,7 @@
     display: flex;
     margin: auto;
     text-align: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     width: 40px;
     height: 40px;
