@@ -64,7 +64,6 @@
 
  .hero-text {
   color: var(--white);
-  margin-bottom: 72px;
  }
 
 .hero-text,
@@ -83,7 +82,9 @@
   color:var(--navyblue)
 }
 
-.features-list,
+.features-list{
+  gap:24px 72px;
+}
 .team-list {
   width: 100%;
   display: flex;
@@ -100,6 +101,7 @@
   display: none;
 }
 
+.features-list
 .features-items {
   color: var(--navyblue);
   margin-bottom:8px;

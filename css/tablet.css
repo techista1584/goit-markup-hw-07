@@ -1,0 +1,131 @@
+/* tablet */
+@media screen and (min-width:768px){
+    .main-header-container {
+        display:flex;
+        align-items:center;
+    }
+  
+    .header {
+        padding:16px 0;
+    }
+
+    .mobile-menu-open {
+        display: none;
+    }
+
+    .nav {
+        display: inline-flex;
+        justify-content: flex-start;
+        gap: 76px;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .nav-list-item {
+        position: relative;
+        transition: color, width 250ms var(--cubic-bezier);
+    }
+
+    .nav-list-item:hover .nav-list-item-link {
+        color: var(--ocean);
+    }
+
+    .nav-list-item:hover .nav-list-item-link::after {
+        width: 100%;
+    }
+
+    .nav-list-item-link {
+        color: var(--navyblue);
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        transform: translateX(0);
+        transition: color 250ms var(--cubic-bezier);
+    }
+
+    .nav-list-item-link::after {
+        content: "";
+        height: 4px;
+        width: 0;
+        background-color: var(--ocean);
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -25px;
+        transform: scaleX(1);
+        transition: width 250ms var(--cubic-bezier);
+    }
+
+    .nav-list-item-link-active {
+        color: var(--ocean);
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+    }
+
+    .nav-list-item-link-active::after {
+        content: "";
+        height: 4px;
+        width: 100%;
+        background-color: var(--ocean);
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -25px;
+    }
+
+    .address-list {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.48px;
+        margin: 0;
+    }
+
+    .address-list-item {
+        color: var(--slate);
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        transition: color 250ms var(--cubic-bezier);
+    }
+
+    .address-list-item:hover {
+        color: var(--ocean);
+    }
+
+    .hero-text {
+        color: var(--white);
+        text-align: center;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 1.12px;
+        margin-bottom:36px;
+    }
+
+    .section-hero {
+        padding: 112px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero/hero-desktop.jpg);
+        background-size: 1440px;
+        background-color: var(--navyblue);
+    }
+   
+}
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(./images/hero/hero-tablet.jpg),
+        url(/images/hero/hero-tablet@2x.jpg)
+    }
+    
