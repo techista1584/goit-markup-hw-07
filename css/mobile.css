@@ -83,8 +83,10 @@
 }
 
 .features-list{
+  display: flex;
   gap:24px 72px;
 }
+
 .team-list {
   width: 100%;
   display: flex;
